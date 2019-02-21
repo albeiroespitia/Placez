@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
 		alignItems: 'center'
 	},
 	buttonText:{
-		fontSize: 15,
+		fontSize: 18,
 		fontFamily: 'Roboto',
 		textAlign: 'center'
 	}
