@@ -5,8 +5,8 @@ import { Container } from 'native-base'
 export default class Home extends React.Component{
 	render(){
 		return(
-			<Container style={styles.mainContainer}>
-				<ImageBackground style={{width: '100%', height: '100%'}} imageStyle={styles.imageContainer} source={require('../../../assets/test.jpg')}>
+			<Container>
+				<ImageBackground style={styles.imageContainer} source={require('../../../assets/backgroundHome.jpg')}>
 					<Text>asdasdasd</Text>
 
 				</ImageBackground>
@@ -17,13 +17,9 @@ export default class Home extends React.Component{
 
 
 const styles = StyleSheet.create({
-	mainContainer:{
-		flex:1,
-		justifyContent: 'center',
-		alignItems: 'center'
-	},
 	imageContainer : {
+		width: '100%',
+		height: '100%',
 		resizeMode: 'cover',
 	}
-
 })
