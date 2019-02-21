@@ -6,7 +6,7 @@ export default class Home extends React.Component{
 	render(){
 		return(
 			<Container style={styles.mainContainer}>
-				<ImageBackground style={{width: '100%', height: '100%'}} imageStyle={styles.imageContainer} source={require('../../../assets/test.jpg')}>
+				<ImageBackground style={{width: '100%', height: '100%'}} imageStyle={styles.imageContainer} source={require('../../../assets/bac.jpg')}>
 					<Text>Inicio</Text>
 				</ImageBackground>
 			</Container>
@@ -21,7 +21,8 @@ const styles = StyleSheet.create({
 		justifyContent: 'center'
 	},
 	imageContainer : {
+		width: '100%',
+		height: '100%',
 		resizeMode: 'cover',
 	}
-
 })
