@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, StyleSheet, ImageBackground, View } from 'react-native'
+import { Text, StyleSheet, ImageBackground, View, StatusBar } from 'react-native'
 import { Container, Button } from 'native-base'
 import { Entypo } from '@expo/vector-icons';
 import { Font } from 'expo';
@@ -30,6 +30,7 @@ export default class Home extends React.Component{
 	render(){
 		return(
 			<Container>
+				<StatusBar hidden />
 				<ImageBackground style={styles.imageContainer} source={require('../../../assets/bac2.jpg')}>
 					<View style={styles.titleContainer}>
 						<Entypo style={styles.mainIcon} name="location" size={60} color="white" />
@@ -54,7 +55,7 @@ export default class Home extends React.Component{
 					<View style={styles.buttonContainer}>
 						{
 							this.state.fontLoaded ? (
-								<Button style={styles.mainButton}>
+								<Button style={styles.mainButton} onPress={()=> this.props.navigation.navigate('Choose')}>
 									<Text style={styles.buttonText}> Get started  </Text>
 								</Button>
 							):(
